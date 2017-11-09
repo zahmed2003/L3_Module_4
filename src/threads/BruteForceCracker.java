@@ -1,5 +1,5 @@
-// Below is a completed program that uses brute force to crack a 9-digit password. 
-// On average, the program takes about # seconds to find the password.
+// Below is a completed program that uses brute force to crack a 7-digit password. 
+// On average, the program takes about 125 seconds to find the password.
 // Your goal is to re-write the algorithm using Threads. Try to shorten the time it takes 
 // to find the code to be as little as possible.
 // Let's see who can crack the code the fastest!
