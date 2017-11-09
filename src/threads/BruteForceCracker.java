@@ -7,7 +7,7 @@
 import java.util.Random;
 
 public class BruteForceCracker {
-	static int code = new Random().nextInt(999999999);
+	static int code = new Random().nextInt(9999999);
 	
 	static long startTime;
 	static long endTime;
