@@ -4,6 +4,8 @@
 // to find the code to be as little as possible.
 // Let's see who can crack the code the fastest!
 
+// Pro-tip: Do not include the creation of the threads as part of the time. 
+
 import java.util.Random;
 
 public class BruteForceCracker {
@@ -14,7 +16,6 @@ public class BruteForceCracker {
 	static float elapsedTime;
 	
 	public static void main(String[] args) {
-		System.out.println(code);
 		System.out.println("Starting Brute Force Checker");
 		startTime = System.currentTimeMillis();
 		
