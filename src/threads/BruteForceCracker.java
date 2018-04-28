@@ -17,12 +17,15 @@ public class BruteForceCracker {
 	static long endTime;
 	static float elapsedTime;
 	
+	static int ctr1 = 0;
+	static int ctr2 = 1000000000;
+	
 	public static void main(String[] args) {
 		System.out.println("Starting Brute Force Checker");
 		startTime = System.currentTimeMillis();
 		
-		int ctr = 0;
-		while(!checkCode(ctr++));
+		new Thread(() -> {while(!checkCode(ctr1++));}).start();;
+		new Thread(() -> {while(!checkCode(ctr2--));}).start();;
 		
 		endTime = System.currentTimeMillis();
 		elapsedTime = (float)(endTime - startTime);
